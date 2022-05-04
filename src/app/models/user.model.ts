@@ -12,6 +12,8 @@ export class User {
     name:           string;
     company:        string;
     blog:           string;
+    html_url:       string;
+    followers:      number;
     
 
 }
