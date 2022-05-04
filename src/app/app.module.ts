@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
+import { GithubService } from './services/github.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms'; 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +19,9 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
