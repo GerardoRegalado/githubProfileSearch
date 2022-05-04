@@ -1,4 +1,4 @@
-
+/* The User class is a blueprint for creating user objects */
 
 export class User {
 

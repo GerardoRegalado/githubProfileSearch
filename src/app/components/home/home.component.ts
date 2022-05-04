@@ -20,8 +20,6 @@ export class HomeComponent implements OnInit {
   user: User = null
 
   ngOnInit(): void {
-
-   
     /* 1. The valueChanges property of the FormControl emits a value every time the value of the control
     changes.
     2. The filter operator filters the values emitted by the valueChanges property.
