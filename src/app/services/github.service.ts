@@ -7,5 +7,14 @@ import { User } from '../models/user.model';
 })
 export class GithubService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  //            👇  Type user Observable
+  getUser(name: string): Observable<User>  {
+  //            ES6 for search user by his 'name'👇
+    const url = `https://api.github.com/users/${name}`
+
+    return this.http.get<User>(url)
+  }
 }
+
